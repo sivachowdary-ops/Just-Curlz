@@ -371,18 +371,19 @@ ul, ol {
   background-color: var(--espresso-dark);
   color: var(--text-on-dark);
   border-bottom: 1px solid var(--espresso-border);
-  font-size: 0.74rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
   position: relative;
   z-index: 1001;
 }
 
 .announcement-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 8px 32px 8px 16px;
+  gap: 8px 12px;
+  padding: 8px 36px 8px 16px;
   position: relative;
   text-align: center;
 }
@@ -391,24 +392,28 @@ ul, ol {
   display: inline-block;
   background: var(--terracotta);
   color: #FFFFFF;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
   padding: 2px 8px;
   border-radius: var(--radius-xs);
-  margin-right: 12px;
   letter-spacing: 0.08em;
+  flex-shrink: 0;
 }
 
 .announcement-text {
   font-weight: 500;
   color: var(--text-on-dark);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .announcement-link {
   color: var(--brass-soft);
   text-decoration: underline;
-  margin-left: 8px;
+  margin-left: 6px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .announcement-link:hover {
@@ -1954,45 +1959,56 @@ ul, ol {
 /* -----------------------------------------------------------------------------
    19. FLOATING WHATSAPP & MOBILE BOTTOM BAR
    ----------------------------------------------------------------------------- */
+.floating-wa-btn,
 .desktop-floating-wa {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 76px;
+  right: 18px;
+  z-index: 100001;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  text-decoration: none;
+}
+
+.floating-wa-btn:hover,
+.desktop-floating-wa:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.6);
 }
 
 @media (min-width: 768px) {
+  .floating-wa-btn,
   .desktop-floating-wa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
     bottom: 28px;
     right: 28px;
-    z-index: 100001;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background-color: #25D366;
-    color: #FFFFFF;
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-    transition: transform var(--transition-fast);
-  }
-
-  .desktop-floating-wa:hover {
-    transform: scale(1.08) translateY(-2px);
+    width: 58px;
+    height: 58px;
   }
 }
 
 .mobile-bottom-bar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 62px;
   z-index: 99999;
-  background-color: rgba(250, 246, 240, 0.96);
+  background-color: rgba(250, 246, 240, 0.98);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-light);
-  padding: 8px 12px;
+  padding: 6px 14px;
   box-shadow: 0 -4px 16px rgba(35, 28, 24, 0.08);
 }
 
@@ -2008,16 +2024,26 @@ ul, ol {
   align-items: center;
   justify-content: center;
   gap: 3px;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-main);
-  padding: 6px;
+  padding: 6px 4px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .bottom-bar-action.primary-action {
   background-color: var(--espresso-dark);
   color: #FFFFFF;
+  padding: 8px 12px;
   border-radius: var(--radius-xs);
+  box-shadow: 0 2px 8px rgba(28, 22, 20, 0.2);
+}
+
+.bottom-bar-action.primary-action:hover {
+  background-color: var(--terracotta);
 }
 
 /* -----------------------------------------------------------------------------
