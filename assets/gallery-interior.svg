@@ -1,0 +1,41 @@
+<!-- REPLACE WITH REAL SALON PHOTO: assets/gallery-interior.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="glowInt" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#281A12"/>
+      <stop offset="60%" stop-color="#18181A"/>
+      <stop offset="100%" stop-color="#0E0E0F"/>
+    </radialGradient>
+    <linearGradient id="brassGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="100%" stop-color="#C8A25A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#glowInt)"/>
+  <!-- Tufted Leather Motif & Brass Peacock Lamp Silhouette -->
+  <g transform="translate(100, 100)">
+    <!-- Architectural grid / wall panels -->
+    <rect x="0" y="0" width="400" height="340" rx="16" fill="#141416" stroke="#2A2A2D" stroke-width="1.5"/>
+    <!-- Tufting diamond pattern -->
+    <path d="M50 0 L150 170 L50 340 M150 0 L250 170 L150 340 M250 0 L350 170 L250 340 M50 170 L150 0 L250 170 L350 0" stroke="#252528" stroke-width="1.5" fill="none"/>
+    <circle cx="150" cy="170" r="3" fill="#C8A25A" opacity="0.8"/>
+    <circle cx="250" cy="170" r="3" fill="#C8A25A" opacity="0.8"/>
+    <!-- Brass Peacock Lamp Icon in Center -->
+    <g transform="translate(200, 140) scale(1.1)" stroke="url(#brassGrad3)" stroke-width="2" fill="none" stroke-linecap="round">
+      <!-- Lamp base -->
+      <path d="M-25 50 L25 50 M-15 50 L-10 30 L10 30 L15 50"/>
+      <!-- Peacock stem & crown -->
+      <line x1="0" y1="30" x2="0" y2="-10"/>
+      <path d="M0 -10 C-12 -20 -15 -35 0 -45 C15 -35 12 -20 0 -10 Z" fill="rgba(200, 162, 90, 0.2)"/>
+      <circle cx="0" cy="-28" r="4" fill="#F26A1B"/>
+      <!-- Diya / Oil flame -->
+      <path d="M0 -47 Q-5 -60 0 -70 Q5 -60 0 -47 Z" fill="#F26A1B" stroke="none"/>
+    </g>
+  </g>
+  <text x="300" y="490" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#C8A25A" letter-spacing="0.25em">
+    SIGNATURE LOUNGE &amp; RECEPTION
+  </text>
+  <text x="300" y="520" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="11" fill="#A19B90" letter-spacing="0.1em">
+    CHARCOAL INTERIORS · BRASS PEACOCK AMBIENCE
+  </text>
+</svg>

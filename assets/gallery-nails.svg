@@ -1,0 +1,35 @@
+<!-- REPLACE WITH REAL SALON PHOTO: assets/gallery-nails.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="glowNail" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2D1A14"/>
+      <stop offset="60%" stop-color="#18181A"/>
+      <stop offset="100%" stop-color="#0E0E0F"/>
+    </radialGradient>
+    <linearGradient id="brassGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="100%" stop-color="#C8A25A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#glowNail)"/>
+  <!-- Nail Lacquer Bottle & Delicate Hand Care Art -->
+  <circle cx="300" cy="270" r="150" fill="#141416" stroke="#2A2A2D" stroke-width="1.5"/>
+  <circle cx="300" cy="270" r="135" fill="none" stroke="url(#brassGrad5)" stroke-width="1" stroke-dasharray="2 3"/>
+  <g transform="translate(300, 260) scale(1.2)" stroke-linecap="round">
+    <!-- Nail Polish Bottle -->
+    <rect x="-30" y="-10" width="60" height="70" rx="12" fill="#1E1E22" stroke="url(#brassGrad5)" stroke-width="2"/>
+    <path d="M-20 20 Q0 30 20 20" stroke="#F26A1B" stroke-width="2.5" fill="none"/>
+    <rect x="-14" y="-55" width="28" height="45" rx="4" fill="#2A2A2E" stroke="url(#brassGrad5)" stroke-width="1.5"/>
+    <!-- Brush Droplet in Burnt Orange -->
+    <circle cx="0" cy="80" r="6" fill="#F26A1B"/>
+    <!-- Botanical leaf sprig -->
+    <path d="M45 -10 Q70 -30 90 -20 Q70 10 45 -10" fill="rgba(200, 162, 90, 0.2)" stroke="url(#brassGrad5)" stroke-width="1.5"/>
+    <path d="M45 10 Q70 30 85 20" stroke="url(#brassGrad5)" stroke-width="1.5" fill="none"/>
+  </g>
+  <text x="300" y="480" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#C8A25A" letter-spacing="0.25em">
+    MANICURE &amp; PEDICURE LOUNGE
+  </text>
+  <text x="300" y="510" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="11" fill="#A19B90" letter-spacing="0.1em">
+    HYDRATING HAND SOAKS &amp; CUTICLE CARE
+  </text>
+</svg>

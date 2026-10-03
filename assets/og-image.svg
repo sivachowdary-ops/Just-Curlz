@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGlow" cx="20%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#2A1B14"/>
+      <stop offset="60%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0E0E0F"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="50%" stop-color="#C8A25A"/>
+      <stop offset="100%" stop-color="#8F6B27"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7D33"/>
+      <stop offset="100%" stop-color="#F26A1B"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="630" fill="url(#bgGlow)"/>
+
+  <!-- Delicate luxury borders -->
+  <rect x="30" y="30" width="1140" height="570" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.4"/>
+  <rect x="42" y="42" width="1116" height="546" rx="12" fill="none" stroke="#2A2A2D" stroke-width="1" opacity="0.6"/>
+
+  <!-- Ambient light sphere in top right -->
+  <circle cx="1050" cy="120" r="280" fill="#F26A1B" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Left Content Column -->
+  <g transform="translate(100, 110)">
+    <!-- Eyebrow Badge -->
+    <rect x="0" y="0" width="370" height="38" rx="19" fill="#1A1A1C" stroke="url(#goldGrad)" stroke-width="1"/>
+    <circle cx="20" cy="19" r="4" fill="#F26A1B"/>
+    <text x="34" y="24" font-family="'Manrope', system-ui, sans-serif" font-size="12" font-weight="700" fill="#C8A25A" letter-spacing="0.22em">
+      UNISEX SALON &amp; SPA · RAJAHMUNDRY
+    </text>
+
+    <!-- Brand Name Heading -->
+    <text x="0" y="115" font-family="'Cormorant Garamond', Georgia, serif" font-size="78" font-weight="600" letter-spacing="0.04em">
+      <tspan fill="#F26A1B">J</tspan><tspan fill="#EDE8DF">ust </tspan><tspan fill="#F26A1B">C</tspan><tspan fill="#EDE8DF">urlz</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="0" y="180" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-style="italic" fill="#EDE8DF" opacity="0.95">
+      "Where every curl, cut and calm feels premium."
+    </text>
+
+    <!-- Sub-bullets -->
+    <text x="0" y="240" font-family="'Manrope', system-ui, sans-serif" font-size="18" fill="#A19B90" font-weight="400">
+      Style for him · Glow for her · Luxury Massage &amp; Spa at Home in Rajamahendravaram
+    </text>
+
+    <!-- Trust Badges Row -->
+    <g transform="translate(0, 290)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="200" height="48" rx="8" fill="#1A1A1C" stroke="#2A2A2D"/>
+      <text x="20" y="30" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#EDE8DF">✨ Hygiene-First</text>
+
+      <!-- Badge 2 -->
+      <rect x="215" y="0" width="210" height="48" rx="8" fill="#1A1A1C" stroke="#2A2A2D"/>
+      <text x="235" y="30" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#EDE8DF">🏡 Home Service</text>
+
+      <!-- Badge 3 -->
+      <rect x="440" y="0" width="210" height="48" rx="8" fill="#1A1A1C" stroke="#2A2A2D"/>
+      <text x="460" y="30" font-family="'Manrope', sans-serif" font-size="13" font-weight="600" fill="#EDE8DF">💆‍♂️ Therapeutic Spa</text>
+    </g>
+
+    <!-- Call to action button visual -->
+    <g transform="translate(0, 365)">
+      <rect x="0" y="0" width="280" height="54" rx="27" fill="url(#orangeGrad)" filter="url(#subtleShadow)"/>
+      <text x="140" y="33" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="16" font-weight="700" fill="#0E0E0F">
+        Book Appointment &rarr;
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Visual Composition: Luxury Medallion -->
+  <g transform="translate(860, 200)">
+    <!-- Rotating Ring Simulation -->
+    <circle cx="120" cy="120" r="150" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.7"/>
+    <image href="logo_badge.png" x="0" y="0" width="240" height="240"/>
+  </g>
+</svg>

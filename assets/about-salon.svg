@@ -1,0 +1,48 @@
+<!-- REPLACE WITH REAL SALON PHOTO: assets/about-salon.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <radialGradient id="aboutGlow" cx="45%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#2D1B12"/>
+      <stop offset="50%" stop-color="#18181A"/>
+      <stop offset="100%" stop-color="#0E0E0F"/>
+    </radialGradient>
+    <linearGradient id="brassGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="50%" stop-color="#C8A25A"/>
+      <stop offset="100%" stop-color="#8E6924"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#aboutGlow)"/>
+
+  <!-- Architectural Luxury Salon Frame -->
+  <rect x="40" y="40" width="720" height="920" rx="24" fill="none" stroke="url(#brassGradAbout)" stroke-width="1.5" opacity="0.4"/>
+  <rect x="56" y="56" width="688" height="888" rx="18" fill="#131316" stroke="#2A2A2D" stroke-width="1"/>
+
+  <!-- Interior Architectural Arches & Ambient Lighting -->
+  <path d="M120 700 V300 Q400 100 680 300 V700" stroke="#222226" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="350" r="180" fill="none" stroke="url(#brassGradAbout)" stroke-width="1" stroke-dasharray="4 6" opacity="0.5"/>
+
+  <!-- Tufted black leather wall visual representation -->
+  <g transform="translate(180, 500)">
+    <rect x="0" y="0" width="440" height="260" rx="12" fill="#18181B" stroke="#2A2A2D" stroke-width="1.5"/>
+    <!-- Diamond tufting stitches -->
+    <path d="M0 0 L110 130 L0 260 M110 0 L220 130 L110 260 M220 0 L330 130 L220 260 M330 0 L440 130 L330 260 M0 130 L110 0 L220 130 L330 0 L440 130" stroke="#25252A" stroke-width="1.5" fill="none"/>
+    <circle cx="110" cy="130" r="4" fill="#C8A25A"/>
+    <circle cx="220" cy="130" r="4" fill="#C8A25A"/>
+    <circle cx="330" cy="130" r="4" fill="#C8A25A"/>
+  </g>
+
+  <!-- Official Owner Logo Medallion in Top Arch -->
+  <g transform="translate(400, 310)">
+    <image href="logo_badge.png" x="-85" y="-85" width="170" height="170"/>
+  </g>
+
+  <!-- Title Badge inside Card -->
+  <g transform="translate(400, 820)">
+    <rect x="-180" y="-24" width="360" height="48" rx="24" fill="#1A1A1D" stroke="url(#brassGradAbout)" stroke-width="1"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#C8A25A" letter-spacing="0.22em">
+      JUST CURLZ · RAJAHMUNDRY
+    </text>
+  </g>
+</svg>

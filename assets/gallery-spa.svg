@@ -1,0 +1,37 @@
+<!-- REPLACE WITH REAL SALON PHOTO: assets/gallery-spa.jpg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="glowSpa" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1B221B"/>
+      <stop offset="60%" stop-color="#141715"/>
+      <stop offset="100%" stop-color="#0E0E0F"/>
+    </radialGradient>
+    <linearGradient id="brassGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="100%" stop-color="#C8A25A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#glowSpa)"/>
+  <!-- Spa Lotus & Balancing Stones Composition -->
+  <circle cx="300" cy="270" r="160" fill="none" stroke="url(#brassGrad2)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.4"/>
+  <!-- Smooth river basalt stones -->
+  <ellipse cx="300" cy="380" rx="140" ry="34" fill="#202224" stroke="#2E3236" stroke-width="1.5"/>
+  <ellipse cx="300" cy="340" rx="100" ry="26" fill="#292D30" stroke="#373B40" stroke-width="1.5"/>
+  <ellipse cx="300" cy="305" rx="65" ry="18" fill="#32383C" stroke="#41474D" stroke-width="1.5"/>
+  <!-- Lotus Petals -->
+  <g transform="translate(300, 240) scale(1.4)" fill="none" stroke="#F26A1B" stroke-width="2" stroke-linecap="round">
+    <path d="M0 -30 C-15 -10 -20 15 0 25 C20 15 15 -10 0 -30 Z" fill="rgba(242, 106, 27, 0.15)"/>
+    <path d="M-5 5 C-28 2 -40 20 -25 32 C-10 32 -5 18 -5 5 Z" stroke="url(#brassGrad2)"/>
+    <path d="M5 5 C28 2 40 20 25 32 C10 32 5 18 5 5 Z" stroke="url(#brassGrad2)"/>
+    <circle cx="0" cy="8" r="3" fill="#C8A25A"/>
+  </g>
+  <!-- Aromatherapy Steam Rings -->
+  <path d="M285 160 Q290 140 300 120 T295 80" stroke="url(#brassGrad2)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M315 170 Q320 145 310 125 T315 85" stroke="url(#brassGrad2)" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <text x="300" y="475" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" fill="#C8A25A" letter-spacing="0.25em">
+    THERAPEUTIC SPA SUITE
+  </text>
+  <text x="300" y="505" text-anchor="middle" font-family="'Manrope', sans-serif" font-size="11" fill="#A19B90" letter-spacing="0.1em">
+    PAIN RELIEF OILS &amp; FRESH DISPOSABLES
+  </text>
+</svg>
